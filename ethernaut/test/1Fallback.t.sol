@@ -4,7 +4,7 @@ pragma solidity ^0.8.13;
 import "../src/utils/TestWithSetup.sol";
 import "../src/1Fallback.sol";
 
-contract CounterTest is TestWithSetup {
+contract FallbackTest is TestWithSetup {
     Fallback public contractToTest;
 
     function setUp() public override {
