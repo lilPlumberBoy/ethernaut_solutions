@@ -5,7 +5,7 @@ pragma solidity ^0.6.2;
 import "../contracts/2Fal1out.sol";
 import "forge-std/Test.sol";
 
-contract Fal1outTest is Test{
+contract Fal1outTest is Test {
     Fallout public contractToTest;
     address user = address(1234);
     address owner = address(5678);
