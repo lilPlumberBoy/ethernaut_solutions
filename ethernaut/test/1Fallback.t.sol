@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "../src/utils/TestWithSetup.sol";
-import "../src/1Fallback.sol";
+import "../contracts/utils/TestWithSetup.sol";
+import "../contracts/1Fallback.sol";
 
 contract FallbackTest is TestWithSetup {
     Fallback public contractToTest;

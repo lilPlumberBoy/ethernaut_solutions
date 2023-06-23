@@ -2,7 +2,7 @@
 pragma experimental ABIEncoderV2;
 pragma solidity ^0.6.2;
 
-import "../src/2Fal1out.sol";
+import "../contracts/2Fal1out.sol";
 import "forge-std/Test.sol";
 
 contract Fal1outTest is Test{
@@ -16,7 +16,7 @@ contract Fal1outTest is Test{
         vm.startPrank(user);
     }
 
-    function callFal1out() public {
+    function testcallFal1out() public {
         assertEq(contractToTest.owner(), address(0));
         contractToTest.Fal1out();
         assertEq(contractToTest.owner(), user);
