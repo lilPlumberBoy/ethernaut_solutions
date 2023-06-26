@@ -10,5 +10,6 @@ abstract contract TestWithSetup is Test {
 
     function setUp() public virtual {
         deal(user, 1000 ether);
+        deal(owner, 1000 ether);
     }
 }
