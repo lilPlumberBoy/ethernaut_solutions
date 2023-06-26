@@ -124,8 +124,8 @@
       ]
     },
     "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/utils/TestWithSetup.sol": {
-      "lastModificationDate": 1687295167023,
-      "contentHash": "40c1a7a5938ef20d940d814270269b4b",
+      "lastModificationDate": 1687537116144,
+      "contentHash": "5039f5d4148dd814d0cf0627e88e1cba",
       "sourceName": "contracts/utils/TestWithSetup.sol",
       "solcConfig": {
         "version": "0.8.17",
@@ -968,6 +968,289 @@
       ],
       "artifacts": [
         "SafeMath"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/4Telephone.sol": {
+      "lastModificationDate": 1687535723490,
+      "contentHash": "5c3bd9a4d856f7f3776c224deac0c16b",
+      "sourceName": "contracts/4Telephone.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Telephone"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/attackers/4TelephoneAttack.sol": {
+      "lastModificationDate": 1687536368062,
+      "contentHash": "70879090de31e290b6bfcd0829af2518",
+      "sourceName": "contracts/attackers/4TelephoneAttack.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [
+        "../4Telephone.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "TelephoneAttack"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/6Delegation.sol": {
+      "lastModificationDate": 1687539857960,
+      "contentHash": "15b9555256debb1b3df9842fc5b1ab6c",
+      "sourceName": "contracts/6Delegation.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Delegate",
+        "Delegation"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/7Force.sol": {
+      "lastModificationDate": 1687801903866,
+      "contentHash": "112cf2af872cb56c4ef884a50a9bd102",
+      "sourceName": "contracts/7Force.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Force"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/8Vault.sol": {
+      "lastModificationDate": 1687804723650,
+      "contentHash": "aa98c99abcd334f9b67d0d3c5294e901",
+      "sourceName": "contracts/8Vault.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Vault"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/5Token.sol": {
+      "lastModificationDate": 1687538161759,
+      "contentHash": "2592dddeb5ffc55b64cb8cb51ae15620",
+      "sourceName": "contracts/5Token.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.2"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/Users/michaeldaly/github_projects/ethernaut_solutions/ethernaut/contracts/9King.sol": {
+      "lastModificationDate": 1687812998213,
+      "contentHash": "e67f603c4934a2fae1eb65f010fe9e44",
+      "sourceName": "contracts/9King.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "remappings": [
+            "ds-test/=lib/forge-std/lib/ds-test/src/",
+            "forge-std/=lib/forge-std/src/",
+            "openzeppelin-contracts-06/=lib/openzeppelin-contracts-06/contracts/"
+          ]
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "King"
       ]
     }
   }
