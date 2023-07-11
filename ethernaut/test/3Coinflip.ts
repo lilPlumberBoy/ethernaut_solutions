@@ -1,10 +1,9 @@
 // import hre from 'hardhat';
 import {ethers} from "hardhat"
 import chai from "chai"
-import { mine } from "@nomicfoundation/hardhat-network-helpers";
+import {mine} from "@nomicfoundation/hardhat-toolbox/network-helpers"
 
 const { expect } = chai
-
 
 describe("CoinFlipAttack", function (){
     it("Should attack the CoinFlip contract", async function () {
