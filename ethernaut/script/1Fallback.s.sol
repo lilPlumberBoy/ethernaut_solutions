@@ -17,3 +17,6 @@ contract FallbackAttackerScript is Script {
 }
 // called with:
 // forge script script/1Fallback.s.sol --private-key $PKEY --broadcast -vvvv --rpc-url $RPC_URL
+// *note not including --broadcast will simulate your script run against a fork
+// To manually check if the challenge has been completed without writng another script:
+// cast call 0x462cbc4e87A29724276986561AAe35D193da5156 "owner()"
