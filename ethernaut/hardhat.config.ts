@@ -3,7 +3,6 @@ import "@nomicfoundation/hardhat-toolbox";
 import dotenv from "dotenv";
 
 dotenv.config()
-console.log(process.env.RPC_URL)
 module.exports = {
   networks: {
     goerli: {
